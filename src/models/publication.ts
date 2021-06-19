@@ -7,6 +7,7 @@ const PostSchema: Schema = new Schema(
     subTitle: { type: String, required: true },
     body: { type: String, required: true },
     category: { type: String, required: true },
+    image_url: { type: String, required: true },
   },
   { timestamps: true },
 );
