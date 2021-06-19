@@ -7,8 +7,9 @@ import {
 
 export const routes = (app: Express): void => {
   const options: RoutingControllersOptions = {
-    // defaultErrorHandler: false,
+    defaultErrorHandler: false,
     validation: true,
+    classTransformer: false,
     // authorizationChecker: null,
     // currentUserChecker: null,
     controllers: [path.join(__dirname, '..', '/controllers/**/*{.ts,.js}')],
